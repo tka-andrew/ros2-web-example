@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-turtlesim-control',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TurtlesimControlComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   ngOnInit(): void {
+    this.http.get<any>('http://localhost:3000/').subscribe(response => {
+        console.log(response.data);
+    })
   }
 
 }

@@ -8,12 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class MainContentsComponent implements OnInit {
 
   constructor() { 
-    console.log("initialized")
   }
 
   ngOnInit(): void {
-    console.log("initialized")
-
   }
 
 }
