@@ -1,0 +1,17 @@
+<div style="height: 100%; display: flex; flex-direction: column;">
+    <mat-toolbar fxLayout="row" fxLayoutAlign="start center" style="padding: 10px 50px; height: 78px;">
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <p id="name" style="font-size: 30px; margin: 0px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >Simple ROS2 Web Example</p>
+            <span id="title" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Tan Kui An Andrew | 2022</span>
+        </div>
+        <span class="app-spacer"></span>
+    
+    </mat-toolbar>
+    <div class="flexRemainingSpace">
+        <div class="flexContainer">
+            <div class="flexRemainingSpace" style="overflow: auto;">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

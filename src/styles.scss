@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+
+$flexContentSize: 0 1 auto;
+$flexRemainingSpace: 1 1 1e-9px;
+
+.app-spacer {
+    flex: 1;
+}
+
+.flexContentSize {
+  flex: $flexContentSize;
+}
+
+.flexRemainingSpace {
+  flex: $flexRemainingSpace;
+}
+
+.flexContainer {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 5px;
+  overflow: auto;
+}
+
+.lightThemeRouterLinkActive{
+  background-color: #d3d3d3;
+  color:#434fd3;
+  font-weight: bold;
+}
+
+.darkThemeRouterLinkActive{
+  background-color: #535eda;
+  color:black;
+  font-weight: bold;
+
+}
+
+.storyCard {
+  border-radius: 10px;
+}
+
+.mat-divider {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  border: solid;
+  border-color: grey;
+}
+
+ul {
+  margin-bottom: 5px;
+}
+
+li {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.highlightInGrey {
+  background-color: #CCC;
+}
+
+.CLI-font {
+  font-family: 'Courier New', monospace;
+  font-style: italic;
+}
+
+.script-font {
+  font-family: 'Brush Script MT', cursive;
+  font-size: larger;
+  font-style: italic;
+}
+
+.highlight-font {
+  font-family: 'Brush Script MT', monospace;
+  font-style: italic;
+  background-color:#ddd;
+}
+
+.app-busy {
+  position: absolute;
+  background: #fff;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
