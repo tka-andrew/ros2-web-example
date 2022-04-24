@@ -2,6 +2,34 @@
     <h2>ROS2 Turtlesim Control</h2>
     <div class="flexContainer" fxLayout="column" fxLayoutAlign="center center   " fxLayoutGap="10px">
         <div fxLayout="column" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+            <div fxLayout = "column" style="min-width: 320px;">
+                <button mat-button (click)="getCurrentPose()">Get Current Pose</button>
+                <div>
+                    Current Pose: <br>
+                    <table>
+                        <tr>
+                            <td>x</td>
+                            <td>{{currentPose.x}}</td>
+                        </tr>
+                        <tr>
+                            <td>y</td>
+                            <td>{{currentPose.y}}</td>
+                        </tr>
+                        <tr>
+                            <td>theta</td>
+                            <td>{{currentPose.theta}}</td>
+                        </tr>
+                        <tr>
+                            <td>linear_velocity</td>
+                            <td>{{currentPose.linear_velocity}}</td>
+                        </tr>
+                        <tr>
+                            <td>angular_velocity</td>
+                            <td>{{currentPose.angular_velocity}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
             <div fxLayout = "column">
                 <button (click)="turtleSimControl('up')"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_upward</mat-icon></button>
                 <div fxLayout = "row">
