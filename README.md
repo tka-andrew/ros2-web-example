@@ -1,4 +1,5 @@
 # Ros2WebExample
+This is just a very simple project that acts as the front-end UI for the ros2-nodejs-example.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
