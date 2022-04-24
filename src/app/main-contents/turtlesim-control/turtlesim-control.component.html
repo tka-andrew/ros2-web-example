@@ -3,11 +3,11 @@
     <div class="flexContainer" fxLayout="column" fxLayoutAlign="center center   " fxLayoutGap="10px">
         <div fxLayout="column" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
             <div fxLayout = "column">
-                <button (click)="turtleSimUp()"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_upward</mat-icon></button>
+                <button (click)="turtleSimControl('up')"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_upward</mat-icon></button>
                 <div fxLayout = "row">
-                    <button (click)="turtleSimLeft()"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_back</mat-icon></button>
-                    <button (click)="turtleSimDown()"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_downward</mat-icon></button>
-                    <button (click)="turtleSimRight()"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_forward</mat-icon></button>
+                    <button (click)="turtleSimControl('left')"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_back</mat-icon></button>
+                    <button (click)="turtleSimControl('down')"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_downward</mat-icon></button>
+                    <button (click)="turtleSimControl('right')"><mat-icon aria-hidden="false" aria-label="Example home icon">arrow_forward</mat-icon></button>
                 </div>
             </div>
         </div>
