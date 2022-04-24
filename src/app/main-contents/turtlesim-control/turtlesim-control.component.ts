@@ -18,4 +18,28 @@ export class TurtlesimControlComponent implements OnInit {
     })
   }
 
+  turtleSimUp(): void {
+    this.http.get<any>('http://localhost:3000/turtlesim/up').subscribe(response => {
+      console.log(response.data);
+    })
+  }
+
+  turtleSimDown(): void {
+    this.http.get<any>('http://localhost:3000/turtlesim/down').subscribe(response => {
+      console.log(response.data);
+    })
+  }
+
+  turtleSimLeft(): void {
+    this.http.get<any>('http://localhost:3000/turtlesim/left').subscribe(response => {
+      console.log(response.data);
+    })
+  }
+
+  turtleSimRight(): void {
+    this.http.get<any>('http://localhost:3000/turtlesim/right').subscribe(response => {
+      console.log(response.data);
+    })
+  }
+
 }
